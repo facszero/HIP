@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.HIP" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/hip_green</item>
+        <item name="colorPrimaryVariant">@color/hip_green_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/hip_blue</item>
+        <item name="colorSecondaryVariant">@color/hip_blue_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:colorBackground">@color/hip_background</item>
+        <item name="colorSurface">@color/hip_surface</item>
+        <item name="colorOnSurface">@color/hip_text_primary</item>
+        <item name="android:statusBarColor">@color/hip_green_dark</item>
+        <item name="actionBarStyle">@style/Theme.HIP.ActionBar</item>
+    </style>
+
+    <style name="Theme.HIP.ActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="background">@color/hip_green</item>
+        <item name="titleTextStyle">@style/Theme.HIP.ActionBar.TitleText</item>
+    </style>
+
+    <style name="Theme.HIP.ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Tema para cámara: sin action bar -->
+    <style name="Theme.HIP.Camera" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- Botón primario -->
+    <style name="Widget.HIP.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/hip_green</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+    </style>
+
+    <!-- Botón secundario -->
+    <style name="Widget.HIP.Button.Secondary" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/hip_green</item>
+        <item name="android:textColor">@color/hip_green</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <!-- Card estándar -->
+    <style name="Widget.HIP.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="contentPaddingLeft">16dp</item>
+        <item name="contentPaddingRight">16dp</item>
+        <item name="contentPaddingTop">16dp</item>
+        <item name="contentPaddingBottom">16dp</item>
+    </style>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+</resources>

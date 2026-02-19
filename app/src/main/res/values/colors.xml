@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary: Verde fresco -->
+    <color name="hip_green">#1DB954</color>
+    <color name="hip_green_dark">#158A3E</color>
+    <color name="hip_green_light">#E8F8EE</color>
+
+    <!-- Secondary: Azul frío (heladera) -->
+    <color name="hip_blue">#0A84FF</color>
+    <color name="hip_blue_dark">#0062CC</color>
+    <color name="hip_blue_light">#E3F0FF</color>
+
+    <!-- Accent: Naranja cálido (comida) -->
+    <color name="hip_orange">#FF6B2B</color>
+    <color name="hip_orange_light">#FFF0E8</color>
+
+    <!-- Neutrales -->
+    <color name="hip_background">#F5F7FA</color>
+    <color name="hip_surface">#FFFFFF</color>
+    <color name="hip_text_primary">#1A1A2E</color>
+    <color name="hip_text_secondary">#6B7280</color>
+    <color name="hip_divider">#E5E7EB</color>
+
+    <!-- Estados -->
+    <color name="hip_success">#10B981</color>
+    <color name="hip_warning">#F59E0B</color>
+    <color name="hip_error">#EF4444</color>
+
+    <!-- Chips -->
+    <color name="chip_available">#E8F8EE</color>
+    <color name="chip_missing">#FEF2F2</color>
+    <color name="chip_substitute">#FFF7E6</color>
+
+    <!-- Categorías nutricionales -->
+    <color name="calories_color">#FF6B2B</color>
+    <color name="protein_color">#0A84FF</color>
+    <color name="carbs_color">#F59E0B</color>
+    <color name="fat_color">#8B5CF6</color>
+    <color name="fiber_color">#10B981</color>
+    <color name="sodium_color">#6B7280</color>
+</resources>

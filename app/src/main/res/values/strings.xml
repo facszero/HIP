@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Heladera Inteligente Pro</string>
+    <string name="app_name_short">HIP</string>
+
+    <!-- Scan -->
+    <string name="scan_step_general">Foto general</string>
+    <string name="scan_step_top">Sector superior</string>
+    <string name="scan_step_bottom">Sector inferior y cajones</string>
+    <string name="scan_capture">Tomar foto</string>
+    <string name="scan_skip">Saltear</string>
+    <string name="scan_finish">Finalizar escaneo</string>
+
+    <!-- Review -->
+    <string name="review_title">Confirmá los ingredientes</string>
+    <string name="review_add_manual">+ Agregar ingrediente</string>
+    <string name="review_confirm_all">Confirmar todos</string>
+    <string name="review_find_recipes">🍽 Buscar recetas</string>
+
+    <!-- Recipes -->
+    <string name="recipe_why_title">¿Por qué esta receta?</string>
+    <string name="recipe_ingredients_available">Ingredientes disponibles</string>
+    <string name="recipe_ingredients_missing">Te faltaría conseguir</string>
+    <string name="recipe_steps_title">Preparación</string>
+    <string name="recipe_nutrition_title">Información nutricional por porción</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Mi perfil nutricional</string>
+    <string name="profile_save">Guardar perfil</string>
+    <string name="profile_skip">Omitir por ahora</string>
+
+    <!-- Privacy -->
+    <string name="privacy_title">Privacidad</string>
+</resources>

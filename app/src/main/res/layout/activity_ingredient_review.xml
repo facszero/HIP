@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/hip_background">
+
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Confirmá los ingredientes"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/hip_green" />
+
+    <!-- Info banner -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/hip_blue_light"
+        android:padding="12dp"
+        android:text="✏ Revisá cada ingrediente. Podés confirmar, eliminar o cambiar el estado (crudo/cocido/congelado)."
+        android:textSize="13sp"
+        android:textColor="@color/hip_blue_dark" />
+
+    <!-- Estado vacío -->
+    <TextView
+        android:id="@+id/tvEmptyState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:text="No se detectaron ingredientes automáticamente.\nAgregalos manualmente."
+        android:textSize="15sp"
+        android:textColor="@color/hip_text_secondary"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <!-- Lista de ingredientes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvIngredients"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false" />
+
+    <!-- Panel inferior -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/hip_surface"
+        android:elevation="8dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvConfirmedCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 ingrediente(s) confirmado(s)"
+            android:textSize="13sp"
+            android:textColor="@color/hip_text_secondary"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddIngredient"
+                style="@style/Widget.HIP.Button.Secondary"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="+ Agregar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnConfirmAll"
+                style="@style/Widget.HIP.Button.Secondary"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="✓ Todos" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFindRecipes"
+                style="@style/Widget.HIP.Button.Primary"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="2"
+                android:text="🍽 Buscar recetas"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnScanAgain"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="↩ Volver a escanear"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+</LinearLayout>
